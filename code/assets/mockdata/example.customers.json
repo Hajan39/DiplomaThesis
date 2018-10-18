@@ -1,0 +1,65 @@
+[
+    {
+        "fullName": "Jan Haramia",
+        "section": "62739273",
+        "address": "Kosmonosy 234, Kosmonosy",
+        "lastVisit": "15.2.2018 11:30",
+        "checked": true
+    },
+    {
+        "fullName": "Jaromir Kozel",
+        "section": "120483887",
+        "address": "Jeremenkova 12, Praha 4",
+        "lastVisit": "22.4.2018 11:30",
+        "checked": true
+    },
+    {
+        "fullName": "Maxmilian Červenokostelecký",
+        "section": "377372882",
+        "address": "Nanebevzeti Pany Marie 1737/22, Brandys nad Labem Stara Boleslav",
+        "lastVisit": "22.12.2033 21:37",
+        "checked": false
+    },
+    {
+        "fullName": "Jana Norkova",
+        "section": "872398234",
+        "address": "Zbozilovo 82/2, Brno",
+        "lastVisit": "30.11.2017 09:21",
+        "checked": false
+    },
+    {
+        "fullName": "Katerina Salamova",
+        "section": "987631234",
+        "address": "Narodni 44/1, Jilemnice",
+        "lastVisit": "12.4.2018 17:58",
+        "checked": false
+    },
+    {
+        "fullName": "Dalimil Samec",
+        "section": "98222873",
+        "address": "Derkovo namesti 118, Praha 11",
+        "lastVisit": "21.9.2017 22:11",
+        "checked": false
+    },
+    {
+        "fullName": "Dominika Alexandra",
+        "section": "25436478",
+        "address": "Kronosova 1, Semranice",
+        "lastVisit": "1.1.2011 11:11",
+        "checked": false
+    },
+    {
+        "fullName": "Kamila Tomesova",
+        "section": "893480234",
+        "address": "Mala 122, As",
+        "lastVisit": null,
+        "checked": false
+    },
+    {
+        "fullName": "Vazny Zajemce",
+        "section": "100023837641",
+        "address": "Dobova 9, Hrensko",
+        "lastVisit": null,
+        "checked": false
+    }
+]

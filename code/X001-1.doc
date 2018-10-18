@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#X001-1] EW Portal and Website Improvement committed for Q1/2018</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://jira.eurowag.com/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [X001-1]&nbsp;<a href="https://jira.eurowag.com/browse/X001-1">EW Portal and Website Improvement committed for Q1/2018</a>
+            <span class="subText">
+               Created: 28/Feb/18                   &nbsp;Updated: 17/Apr/18
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Solution Design</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://jira.eurowag.com/secure/BrowseProject.jspa?id=19700">IMP / MELIORO</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Function
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Minor
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="olsovsky" id="word_reporter_olsovsky" href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=olsovsky">Olšovský Petr</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="vojtech.zicha" id="word_assignee_vojtech.zicha" href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=vojtech.zicha">Zicha Vojtěch</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-8557481-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            0 minutes
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            6 weeks, 1 day, 40 minutes
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://jira.eurowag.com/images/icons/attach/zip.gif" height="16" width="16" border="0" alt="Zip Archive">
+                    lundegaardgooglemapdocs.zip &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/word.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    project description_200 sites logic.docx &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/word.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    project description_200 sites logic.docx &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/pdf.gif" height="16" width="16" border="0" alt="PDF File">
+                    project plan - 20180322.pdf &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/pdf.gif" height="16" width="16" border="0" alt="PDF File">
+                    project plan - 20180411.pdf &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    project plan.mpp &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    project plan.mpp &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/pdf.gif" height="16" width="16" border="0" alt="PDF File">
+                    project plan.pdf &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    re  specifikace mapa+pricelist.msg &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    re specifikace mapa+pricelist.msg &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira.eurowag.com/images/icons/attach/word.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    u+ux specification eurowag price list_updatevk (002).docx &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue Links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Blocks</b><br/>
+                            </td>
+                        </tr>
+                                                                                                    <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Family</b><br/>
+                            </td>
+                        </tr>
+                                                                                            </table>
+            </td>
+        </tr>
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Reference:</b></td>
+                <td id="customfield_14522-8557481-value" class="value" bgcolor="#ffffff" width="80%">      &nbsp;
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Hide Issue Links:</b></td>
+                <td id="customfield_14807-8557481-value" class="value" bgcolor="#ffffff" width="80%">    <script type="text/javascript">
+jQuery(document).ready(function() {
+	
+	AJS.$.get("/rest/auth/1/session", function (data) {
+		
+		userName = data.name;
+		
+		// check groups
+		AJS.$.get("/rest/api/2/user", {username: userName, expand: "groups"}, function (data) {
+			
+			var groups = data.groups;
+			
+			var groupItems = jQuery.map(groups.items, function (val, j) {return val.name});
+			
+	        if (groupItems.indexOf("jira-administrators") != -1) {
+
+
+
+				
+			} else
+			{
+				
+
+
+var elementExists = document.getElementById("show-more-links-link");
+if (elementExists){document.getElementById("show-more-links-link").click()}
+
+//document.getElementsByClassName("links-list collapsed-links-list").class = "links-list";
+//document.getElementsByClassName("links-list collapsed-links-list").style.display = "block"
+//document.getElementsByClassName("collapsed-link                    ").class = "";
+//if (document.getElementById("show-more-links").length > 0) {document.getElementById("show-more-links").style.display = //"none";}
+//
+
+var collect = document.getElementsByClassName("issue-link link-title");
+
+
+        for (i = 0; i < collect.length; i++) { 
+//alert(collect[i].innerHTML)
+
+var IM = $('#view-issue-lists tr.issuerow')
+
+for (x = 0; x < IM.length; x++) { 
+                 
+                 
+                 if (IM[x].getAttribute("data-issuekey") == collect[i].innerHTML)
+{
+    
+collect[i].parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+
+
+}
+
+    
+                 
+
+                 
+
+                                 }
+}
+
+// Tady ještě zakrýt vršek
+var lists = document.getElementsByClassName("links-list ");
+var llists = lists
+//alert(lists.length)
+
+var ddcount = 0
+
+for (a = 0; a < lists.length; a++) { 
+var notexist = true
+      var node = lists[a].getElementsByTagName("DD")
+
+for (b = 0; b < node.length; b++) { 
+     
+ if (node[b].style.display != "none") {notexist = false;ddcount++;}
+
+
+
+}
+if (notexist){
+lists[a].class = "";
+lists[a].style.display = "none"; 
+}
+
+}
+                 
+var notexist = true
+
+
+
+for (a = 0; a < llists.length; a++) { 
+if (llists[a].style.display != "none") {notexist = false}
+}
+if (notexist) {$("#linkingmodule").hide();}
+
+
+
+
+var xxx = 0
+var show = 0
+if (ddcount > 5)
+{
+    for (a = 0; a < llists.length; a++) { 
+
+      var node = llists[a].getElementsByTagName("DD")
+
+for (b = 0; b < node.length; b++) { 
+     if (node[b].style.display != "none") {xxx++;}
+
+
+if (xxx > 5) {node[b].setAttribute("class", "collapsed-link"); show++}
+
+}
+
+
+}}
+
+if (xxx > 5) {document.getElementById("show-more-links").style.display = "block";
+document.getElementById("show-more-links-link").innerHTML = "Show more links"
+
+document.getElementById("show-more-links").childNodes[3].innerHTML = ""
+
+} 
+
+
+
+
+
+for (a = 0; a < lists.length; a++) { 
+var notexist = true
+      var node = lists[a].getElementsByTagName("DD")
+
+for (b = 0; b < node.length; b++) { 
+     
+ if (node[b].style.display != "none") {notexist = false;}
+
+
+
+}
+if (notexist){
+lists[a].className = ""; 
+}
+
+}
+      }   
+
+
+			
+		});
+
+var me = document.getElementById("rowForcustomfield_14807")
+if (me) {me.style.display = "none"}
+	});
+
+
+
+});
+</script>
+
+</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Targets:</p>
+<ol>
+	<li>Q1/2018, with a max of 2 weeks delay</li>
+	<li>Website facelift, significant stability and speed improvement</li>
+	<li>Petrol stations section ONLY</li>
+</ol>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-11707493"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="olsovsky" id="word_commented_olsovsky" href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=olsovsky">Olšovský Petr</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">28/Feb/18</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11707493"><td bgcolor="#ffffff">
+            <p>Agreed project plan in attachment <span class="nobr"><a href="https://jira.eurowag.com/secure/attachment/389826/389826_project+plan.pdf" title="project plan.pdf attached to X001-1">project plan.pdf<sup><img class="rendericon" src="https://jira.eurowag.com/images/icons/link_attachment_7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span></p>
+
+<p>Commented draft of business requirements is described in <span class="nobr"><a href="https://jira.eurowag.com/secure/attachment/389920/389920_u%2Bux+specification+eurowag+price+list_updatevk+%28002%29.docx" title="u+ux specification eurowag price list_updatevk (002).docx attached to X001-1">u+ux specification eurowag price list_updatevk (002).docx<sup><img class="rendericon" src="https://jira.eurowag.com/images/icons/link_attachment_7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span>. This attachment is also included in <span class="nobr"><a href="https://jira.eurowag.com/secure/attachment/389921/389921_re+specifikace+mapa%2Bpricelist.msg" title="re specifikace mapa+pricelist.msg attached to X001-1">re specifikace mapa+pricelist.msg<sup><img class="rendericon" src="https://jira.eurowag.com/images/icons/link_attachment_7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span> which contains mainly specification for the current map solution implemented in 2013/2014.</p>
+
+<p>New wireframes are available at  <a href="https://invis.io/YUFX9VH3V2M" class="external-link" rel="nofollow">https://invis.io/YUFX9VH3V2M</a></p>
+
+<p> </p>
+        </td></tr>
+                <tr id="comment-header-11721145"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="olsovsky" id="word_commented_olsovsky" href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=olsovsky">Olšovský Petr</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">02/Mar/18</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11721145"><td bgcolor="#ffffff">
+            <p>Updated requirements available in <span class="nobr"><a href="https://jira.eurowag.com/secure/attachment/390906/390906_re++specifikace+mapa%2Bpricelist.msg" title="re  specifikace mapa+pricelist.msg attached to X001-1">re  specifikace mapa+pricelist.msg<sup><img class="rendericon" src="https://jira.eurowag.com/images/icons/link_attachment_7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span> (attached on 2nd March)</p>
+        </td></tr>
+                <tr id="comment-header-11858194"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="pavlikova" id="word_commented_pavlikova" href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=pavlikova">Pavlíková Hana</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">16/Mar/18</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11858194"><td bgcolor="#ffffff">
+            <p>I've just uploaded a document with description of "User 100 preselection logic".</p>
+
+<p>This description was also sent to V. Zicha on March 7.</p>
+
+<p>This might impact web performance too - needs to be tested!</p>
+
+<p> </p>
+        </td></tr>
+                <tr id="comment-header-11881795"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="pavlikova" id="word_commented_pavlikova" href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=pavlikova">Pavlíková Hana</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">19/Mar/18</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11881795"><td bgcolor="#ffffff">
+            <p><a href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=vojtech.zicha" class="user-hover" rel="vojtech.zicha">Zicha Vojtěch</a></p>
+
+<p>Additional requirement raised by sales: </p>
+
+<p>If certain customer reaches a limit of 100 User precalculated sites, WAG user (pricing) should be able to increase the limit (on ASM's demand)</p>
+
+<p>Purpose: some big companies might require more sites than small and mid-sized hauliers. Because we don't know now, the system should enable parametrical settings of the site number limit per customer.</p>
+        </td></tr>
+                <tr id="comment-header-11913740"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="olsovsky" id="word_commented_olsovsky" href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=olsovsky">Olšovský Petr</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Mar/18</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11913740"><td bgcolor="#ffffff">
+            <p>Updated project plan attached as a MPP file and aslo as PDF: <span class="nobr"><a href="https://jira.eurowag.com/secure/attachment/402753/402753_project+plan.mpp" title="project plan.mpp attached to X001-1">project plan.mpp<sup><img class="rendericon" src="https://jira.eurowag.com/images/icons/link_attachment_7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span>, <span class="nobr"><a href="https://jira.eurowag.com/secure/attachment/402755/402755_project+plan+-+20180322.pdf" title="project plan - 20180322.pdf attached to X001-1">project plan - 20180322.pdf<sup><img class="rendericon" src="https://jira.eurowag.com/images/icons/link_attachment_7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span></p>
+        </td></tr>
+                <tr id="comment-header-11918225"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="bosmanova" id="word_commented_bosmanova" href="https://jira.eurowag.com/secure/ViewProfile.jspa?name=bosmanova">Bosmanová Jolana</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Mar/18</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11918225"><td bgcolor="#ffffff">
+            <p>Please do not implement all requirements for TOP200, if they are going against original reason, to improve performace.</p>
+
+<p>For the first sights, I would keep 200 sites for pre-calculation, if more expected, full price list is available.</p>
+        </td></tr>
+            </table>
+Generated at Tue Apr 17 10:05:33 CEST 2018 by Hanč Jan using JIRA 7.4.6#74009-sha1:6833bfaf3ecf2246d042a4a07c57ddc58a9dedfa.
+
+</body>
+</html>

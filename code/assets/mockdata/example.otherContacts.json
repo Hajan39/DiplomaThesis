@@ -1,0 +1,16 @@
+[
+    {
+        "key": 1001,
+        "iconName": "md-help",
+        "fullName": "Helpdesk",
+        "position": "Technická podpora",
+        "phoneNumber": "+420123456789"
+    },
+    {
+        "key": 1002,
+        "iconName": "md-alert",
+        "fullName": "Chuck Norris",
+        "position": "Senior Manager",
+        "phoneNumber": "+420123456789"
+    }
+]

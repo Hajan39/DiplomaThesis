@@ -1,0 +1,44 @@
+[
+    {
+        "key": 1,
+        "iconName": "logo-android",
+        "fullName": "Jan Hanč",
+        "position": "Manager",
+        "phoneNumber": "123456789"
+    },
+    {
+        "key": 2,
+        "iconName": "md-glasses",
+        "fullName": "Elvis Pressley",
+        "position": "839734683",
+        "phoneNumber": "+420123456789"
+    },
+    {
+        "key": 3,
+        "iconName": "person",
+        "fullName": "Tomio Okamura",
+        "position": "7654098765",
+        "phoneNumber": "+420123456789"
+    },
+    {
+        "key": 4,
+        "iconName": "person",
+        "fullName": "Selena Gomez",
+        "position": "76543768",
+        "phoneNumber": "+420123456789"
+    },
+    {
+        "key": 5,
+        "iconName": "person",
+        "fullName": "William Shakespeare",
+        "position": "199202023",
+        "phoneNumber": "+420123456789"
+    },
+    {
+        "key": 6,
+        "iconName": "person",
+        "fullName": "Chi Nog Mung",
+        "position": "987678987",
+        "phoneNumber": "+420123456789"
+    }
+]

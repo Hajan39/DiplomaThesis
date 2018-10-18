@@ -1,0 +1,27 @@
+[
+    {
+        "name": "NC",
+        "plan": "24",
+        "real": "2"
+    },
+    {
+        "name": "RES",
+        "plan": "11",
+        "real": "1"
+    },
+    {
+        "name": "NG",
+        "plan": "2",
+        "real": "1"
+    },
+    {
+        "name": "Prodeje",
+        "plan": "200 000",
+        "real": "23 000"
+    },
+    {
+        "name": "Vybery",
+        "plan": "24 000 000",
+        "real": "130 000"
+    }
+]

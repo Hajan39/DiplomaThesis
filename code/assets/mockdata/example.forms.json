@@ -1,0 +1,147 @@
+{
+  "Scoring": {
+    "formName": "Scoring",
+    "fields": [
+      {
+        "type": "inputGroup",
+        "name": "CUSTOMER_TYPE",
+        "label": "Typ zákazníka (Z JSON)",
+        "fields": [
+          {
+            "type": "picker-list",
+            "name": "customerType",
+            "label": "Typ klienta",
+            "order": 0,
+            "required": true,
+            "validators": ["required"],
+            "options": [
+              {
+                "value": "NC",
+                "label": "Nový zákazník"
+              },
+              {
+                "value": "AC",
+                "label": "Stávající zákazník"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "inputGroup",
+        "name": "PERSONAL_DATA",
+        "label": "Osobní informace",
+        "fields": [
+          {
+            "name": "pin",
+            "type": "number",
+            "label": "Rodné číslo",
+            "icon": {
+              "name": "id-card",
+              "library": "FontAwesome"
+            },
+            "validators": ["required", "numeric"]
+          },
+          {
+            "name": "firstName",
+            "type": "text",
+            "label": "Jméno",
+            "validators": ["required", "alphanumeric"]
+          },
+          {
+            "name": "lastName",
+            "type": "text",
+            "label": "Příjmení",
+            "validators": ["required", "alphanumeric"]
+          },
+          {
+            "name": "phoneNumber",
+            "label": "Telefonní číslo",
+            "type": "text",
+            "keyboardType": "phone-pad",
+            "placeholder": "+420734123456",
+            "validators": [
+              "required",
+              {
+                "regExp":
+                  "^\\+420[0-9]{9,9}$",
+                "errorMessage": "Zadané telefonní číslo není platné (regex validace)"
+              }
+            ],
+            "normalizer": {
+              "name": "phoneNumberNormalizer"
+            }
+          }
+        ]
+      },
+      {
+        "type": "inputGroup",
+        "name": "FINANCIAL_DATA",
+        "label": "Finanční údaje",
+        "fields": [
+          {
+            "name": "netIncome",
+            "label": "Čistý příjem",
+            "placeholder": "300 000 Kč",
+            "type": "number",
+            "normalizer": {
+              "name": "numberNormalizer",
+              "parameters": {
+                "currency": "Kč"
+              }
+            }
+          },
+          {
+            "name": "otherIncomes",
+            "label": "Ostatní příjmy",
+            "type": "number",
+            "normalizer": {
+              "name": "numberNormalizer",
+              "parameters": {
+                "currency": "Kč"
+              }
+            }
+          },
+          {
+            "name": "totalIncome",
+            "label": "Celkový příjem (Součet výše uvedených polí)",
+            "type": "number",
+            "normalizer": {
+              "name": "numberNormalizer",
+              "parameters": {
+                "currency": "Kč"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "inputGroup",
+        "name": "LOAN_DATA",
+        "label": "Výdaje",
+        "fields": [
+          {
+            "name": "externalLoanRepayments",
+            "label": "Výdaje pro jiné půjčky",
+            "type": "number"
+          },
+          {
+            "name": "estimatedMonthlySpending",
+            "label": "Odhadované měsíční výdaje",
+            "type": "number"
+          },
+          {
+            "name": "suggestedMonthlyInstallment",
+            "label": "Navrhovaná částka splácení",
+            "type": "number"
+          },
+          {
+            "name": "requestedLoanAmount",
+            "label": "Požadovaná výše úvěru",
+            "type": "number"
+          }
+        ]
+      }
+    ]
+  }
+}

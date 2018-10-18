@@ -1,0 +1,83 @@
+{
+  "businessResults": {
+    "TITLE": "Üzleti eredmények"
+  },
+  "common": {
+    "BACK": "Vissza",
+    "CANCEL": "Mégsem",
+    "ENTER_SMS_CODE": "Kérlek írd be az SMS-ben kiküldött kódot a belépéshez!",
+    "ENTER_VALID_CREDENTIALS": "Valós bejelentkezési adatok megadása kötelező!",
+    "FIELD_REQUIRED": "A mező kitöltése kötelező",
+    "LOGIN": "Bejelentkezés",
+    "LOGIN_NAME": "Felhasználói név",
+    "LOGIN_PASSWORD": "Jelszó",
+    "LOG_IN": "Bejelentkezés",
+    "LOG_OUT": "Kijelentkezés",
+    "MAX_LENGTH": "Maximum {{COUNT}} karakter hosszú ",
+    "MIN_LENGTH": "Minimum {{COUNT}} karakter, vagy hosszabb",
+    "MUST_LOGIN": "Az alkalmazás használatához kérlek jelentkezz be!",
+    "NO": "Nem",
+    "OK": "Ok",
+    "ONLY_ALPHANUMERIC_CHARACTERS": "Csak az ABC karakterek, valamint számok használata engedélyezett",
+    "ONLY_NUMBERS": "Csak számokjegyek (0-9) használata engedélyezett",
+    "PHONE_NUMBER": "Telefonszám",
+    "REPRESENTATIVE_ID": "Reprezentatív ID",
+    "SMS_CODE": "SMS-ben kapott kód",
+    "WELCOME": "Üdvözöllek!",
+    "YES": "Igen"
+  },
+  "loginErrors": {
+    "ALREADY_SENT": {
+      "subtitle": "Kérlek várj 2 percet, mielőtt újra próbálkozol a belépéssel.",
+      "title": "Túl sok bejelentkezési kísérlet"
+    },
+    "INVALID": {
+      "subtitle": "Kérlek ellenőrizd a beírt azonosítókat.",
+      "title": "Hibás bejelentkező adatok!"
+    },
+    "INVALID_CLIENTID": {
+      "subtitle": "A kiszolgáló nem ismeri a kliens programot.",
+      "title": "Hibás kliens"
+    },
+    "INVALID_CODE": {
+      "subtitle": "A beírt megerősítő kód hibás, kérlek ellenőrizd.",
+      "title": "Hibás megerősítő kód"
+    },
+    "NO_INTERNET": {
+      "subtitle": "Csatlakozz fel egy WiFi hálózatra, vagy engedélyezd az adatkapcsolatot.",
+      "title": "Az internet nem elérhető"
+    },
+    "OLD_CODE": {
+      "subtitle": "A beírt megerősítő kód lejárt, kérlek próbáld újra a bejelentkezést az elejéről.",
+      "title": "Lejárt megerősítő kód"
+    },
+    "SERVER_ERROR": {
+      "subtitle": "Vedd fel a kapcsolatot a feletteseddel",
+      "title": "Kiszolgáló hiba"
+    }
+  },
+  "popup": {
+    "toc": {
+      "hash_difference": {
+        "text": "Törlesztõtábla frissìtés áll rendelkezésre, mely dátumban nem frissebb, viszont az ellenörzõszáma különbözik a jelenleg használttól. Szeretne frissiteni?",
+        "title": "Törlesztõtábla frissìtése"
+      },
+      "update_available": {
+        "text": "Új törlesztõtábla frissìtés áll rendelkezésre, szeretne frissiteni?",
+        "title": "Törlesztõtábla frissìtése"
+      }
+    }
+  },
+  "sidebar": {
+    "navigation": {
+      "BusinessResults": "Üzleti eredmények",
+      "Home": "Kezdőlap",
+      "Scoring": "Scoring",
+      "DailyMessages": "Napi üzeneteket",
+      "TableOfCharges": "Törlesztõtábla"
+    }
+  },
+  "unlockErrors": {
+    "AuthenticationNotMatch": "Nincs találat."
+  }
+}

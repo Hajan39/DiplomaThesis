@@ -1,0 +1,103 @@
+{
+  "name": "AgentCockpitNT",
+  "private": true,
+  "scripts": {
+    "android": "cd android && gradlew clean && cd .. && concurrently -r \"npm run watch\" \"npm run react-native-cli -- run-android\"",
+    "build": "npm run clean && npm run tsc --",
+    "clean": "rimraf artifacts",
+    "ios": "react-native run-ios",
+    "jest": "node node_modules/jest/bin/jest.js",
+    "lint": "tslint src/**/*.ts",
+    "precommit": "yarn test",
+    "reconnect": "adb reverse tcp:8081 tcp:8081 && adb reverse tcp:8000 tcp:8000 && adb reverse tcp:80 tcp:80",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "react-native-cli": "node node_modules/react-native/local-cli/cli.js",
+    "test": "yarn jest && tslint src/**/*.ts && eslint .",
+    "tsc": "tsc",
+    "watch": "npm run build -- -w",
+    "shake": "adb shell input keyevent 82 ",
+    "formSchema": "typescript-json-schema --required --ignoreErrors --out schema.json ./src/models/form/*.model.ts Container",
+    "postinstall": "remotedev-debugger --hostname localhost --port 8000 --injectserver"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "i18next": "^11.0.0",
+    "jest": "^22.4.3",
+    "native-base": "^2.4.1",
+    "npm": "^5.10.0",
+    "react": "^16.3.1",
+    "react-i18next": "^7.5.1",
+    "react-native": "0.55.4",
+    "react-native-action-button": "^2.8.4",
+    "react-native-camera": "^1.0.3",
+    "react-native-communications": "^2.2.1",
+    "react-native-fcm": "^14.1.3",
+    "react-native-languages": "^1.0.6",
+    "react-native-permissions": "^1.1.1",
+    "react-native-router-flux": "^4.0.0-beta.28",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^1.5.10",
+    "react-navigation-redux-helpers": "^1.0.3",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-form": "^7.3.0",
+    "redux-persist": "^5.9.1",
+    "redux-thunk": "^2.2.0",
+    "remote-redux-devtools": "^0.5.12",
+    "remote-redux-devtools-on-debugger": "^0.8.3"
+  },
+  "devDependencies": {
+    "@types/i18next": "^8.4.3",
+    "@types/jest": "^22.2.2",
+    "@types/react": "^16.3.5",
+    "@types/react-i18next": "^7.3.2",
+    "@types/react-native": "^0.52.23",
+    "@types/react-native-vector-icons": "^4.6.0",
+    "@types/react-navigation": "^1.5.4",
+    "@types/react-redux": "^5.0.15",
+    "@types/redux-form": "^7.2.2",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.3",
+    "babel-preset-react-native": "^4.0.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "husky": "^0.14.3",
+    "jest-expo": "^26.0.0",
+    "path": "^0.12.7",
+    "prettier": "^1.11.1",
+    "react-test-renderer": "^16.3.1",
+    "remotedev-rn-debugger": "^0.8.3",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^22.4.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1",
+    "typescript-json-schema": "^0.22.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "preset": "react-native",
+    "coverageReporters": [
+      "json",
+      "lcov"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|react-native-locale-detector|react-native-fcm|react-native-iphone-x-helper|lottie-react-native|expo|react-native-maps|react-native-svg|react-native-branch|native-base-shoutem-theme|react-native-easy-grid|react-native-drawer|react-native-vector-icons|react-native-keyboard-aware-scroll-view|react-navigation|native-base|@expo|react-native-scrollable-tab-view)/)"
+    ]
+  }
+}

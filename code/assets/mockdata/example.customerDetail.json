@@ -1,0 +1,63 @@
+ [ {
+        "section": "62739273",
+        "address": "Doubravská 23, Praha 2",
+        "agreementNumber": "98652670",
+        "phone":"+420734839007",
+        "dateOfAgreement": "11.02.2017"
+    },
+    {
+        "section": "120483887",
+        "address": "Marionova 431, Praha 2",
+        "agreementNumber": "896253028",
+        "phone":"+420734839007",
+        "dateOfAgreement": "01.05.2017"
+    },
+    {
+        "section": "377372882",
+        "address": "Karlovarská 113, Praha 9",
+        "agreementNumber": "87865769",
+        "phone":"+420734839007",
+        "dateOfAgreement": "11.01.2017"
+    },
+    {
+        "section": "872398234",
+        "address": "Samčí 123, Praha 4",
+        "agreementNumber": "98765641",
+        "phone":"+420734839007",
+        "dateOfAgreement": "22.05.2018"
+    },
+    {
+        "section": "987631234",
+        "address": "17. listopadu 902, Praha 8",
+        "agreementNumber": "786475345",
+        "phone":"+420734839007",
+        "dateOfAgreement": "15.12.2017"
+    },
+    {
+        "section": "98222873",
+        "address": "Koněvova 534, Praha 1",
+        "agreementNumber": "459874379",
+        "phone":"+420734839007",
+        "dateOfAgreement": "16.09.2017"
+    },
+    {
+        "section": "25436478",
+        "address": "Reklamní 2, Praha 2",
+        "agreementNumber": "7867285719",
+        "phone":"+420734839007",
+        "dateOfAgreement": "15.05.2018"
+    },
+    {
+        "section": "893480234",
+        "address": "Náměstí sv. Floriána 3, Praha 3",
+        "agreementNumber": "345742086",
+        "phone":"+420734839007",
+        "dateOfAgreement": "15.01.2011"
+    },
+    {
+        "section": "100023837641",
+        "address": "Malá 232, Praha 3",
+        "agreementNumber": "83768527906",
+        "phone":"+420734839007",
+        "dateOfAgreement": "31.03.2012"
+    }]

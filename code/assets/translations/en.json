@@ -1,0 +1,128 @@
+{
+"scoring":{
+  "sent":{
+    "header":"Scoring sent",
+    "body":"Please, wait for reply"
+  },
+  "send": "Send Scoring"
+},
+"businessResults": {
+  "name": "Business Results",
+  "plan": "Plan",
+  "reality": "Reality"
+},
+"customers":{
+  "TITLE": "Customers"
+},
+"contacts":{
+  "TITLE":"Contacts",
+  "agency": "AGENCY",
+  "all": "ALL"
+},
+"dailyMessages":{
+  "Header":"Thank you",
+  "Body": "The report has been sent",
+  "Send": "Send daily resutls"
+},
+"settings":{
+  "synchro":{
+    "header": "Synchronization",
+    "headerNote":"Mobile data connection",
+    "description": "For downloading information, mobile data are used automaticaly, if any option below is cheched. The options uses different amount of data.",
+    "basicInfo": "Basic customers information",
+    "detailInfo": "Detail customers information"
+  }
+},
+  
+  "home":{
+    "TITLE": "Home"
+  },
+  
+  "table-of-charges":{
+    "TITLE":"Table of Charges"
+  },
+  "common": {
+    "BACK": "Back",
+    "CANCEL": "Cancel",
+    "ENTER_SMS_CODE": "Please enter the code we sent you in SMS to log in!",
+    "ENTER_VALID_CREDENTIALS": "Enter Valid Username & password!",
+    "FIELD_REQUIRED": "This field is required",
+    "LOGIN": "Log in",
+    "LOGIN_NAME": "Username",
+    "LOGIN_PASSWORD": "Password",
+    "LOG_IN": "Sign in",
+    "LOG_OUT": "Sign out",
+    "MAX_LENGTH": "Must be {{COUNT}} character or less",
+    "MAX_LENGTH_plural": "Must be {{COUNT}} characters or less",
+    "MIN_LENGTH": "Must be {{COUNT}} character or more",
+    "MIN_LENGTH_plural": "Must be {{COUNT}} characters or more",
+    "MUST_LOGIN": "You must sign in",
+    "NO": "No",
+    "OK": "Ok",
+    "ONLY_ALPHANUMERIC_CHARACTERS": "Only alphanumeric characters allowed",
+    "ONLY_NUMBERS": "You can use only number characters (0-9) here",
+    "PHONE_NUMBER": "Phone number",
+    "REPRESENTATIVE_ID": "Representative ID",
+    "SMS_CODE": "SMS code",
+    "WELCOME": "Welcome!",
+    "YES": "Yes",
+    "NOT_AVAILABLE": "We are sorry, this function is not available, yet"
+  },
+  "loginErrors": {
+    "ALREADY_SENT": {
+      "subtitle": "You must wait ~2 minutes before you try it again.",
+      "title": "Too much login attempts."
+    },
+    "INVALID": {
+      "subtitle": "Please check the provided representative ID and phone number.",
+      "title": "Invalid login credentials!"
+    },
+    "INVALID_CLIENTID": {
+      "subtitle": "The server can't recognize the client program",
+      "title": "Wrong client"
+    },
+    "INVALID_CODE": {
+      "subtitle": "The verification code you provided is invalid, please check the digits.",
+      "title": "Invalid verification code"
+    },
+    "NO_INTERNET": {
+      "subtitle": "Please connect to a WiFi access point, or enable your data connection.",
+      "title": "No internet connection"
+    },
+    "OLD_CODE": {
+      "subtitle": "Please try again from the first step.",
+      "title": "Old verification code"
+    },
+    "SERVER_ERROR": {
+      "subtitle": "Please contact your supervisor",
+      "title": "Possibly server error"
+    }
+  },
+  "popup": {
+    "toc": {
+      "hash_difference": {
+        "text": "There is a version from the table of charges where the hash differs from the one you already downloaded. Would you like to update?",
+        "title": "TOC update"
+      },
+      "update_available": {
+        "text": "There is a newer version from the table of charges, would you like to update?",
+        "title": "TOC update"
+      }
+    }
+  },
+  "sidebar": {
+    "navigation": {
+      "Home": "Home",
+      "Scoring": "Scoring",
+      "DailyMessages": "Daily Messages",
+      "Customers": "Customers",
+      "CustomerDetail": "Customer Detail",
+      "TableOfCharges": "Table Of Charges",
+      "Settings":"Settings",
+      "Contacts":"Contacts"
+    }
+  },
+  "unlockErrors": {
+    "AuthenticationNotMatch": "No match."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "DailyMessage": {
+    "formName": "DailyMessage",
+    "fields": [
+      {
+        "name": "nc",
+        "type": "number",
+        "label": "NC",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "obn",
+        "type": "number",
+        "label": "OBN",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "sub",
+        "type": "number",
+        "label": "SUB",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "ref",
+        "type": "number",
+        "label": "REF",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "pu",
+        "type": "number",
+        "label": "PU",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "sales",
+        "type": "number",
+        "label": "Prodeje",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "coll",
+        "type": "number",
+        "label": "Výběry",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "vz",
+        "type": "number",
+        "label": "VZ",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "qc",
+        "type": "number",
+        "label": "QC",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      },
+      {
+        "name": "btq",
+        "type": "number",
+        "label": "BTQ",
+        "validators": [
+          "required",
+          "numeric"
+        ]
+      }
+    ]
+  }
+}

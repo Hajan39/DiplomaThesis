@@ -1,0 +1,1021 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "FlexAlignType": {
+      "enum": ["baseline", "center", "flex-end", "flex-start", "stretch"],
+      "type": "string"
+    },
+    "Form": {
+      "description": "Form object. It contains the inputs and input groups",
+      "properties": {
+        "fields": {
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/ITextInputMetadata"
+              },
+              {
+                "$ref": "#/definitions/INumberInputMetadata"
+              },
+              {
+                "$ref": "#/definitions/IDateInputMetadata"
+              },
+              {
+                "$ref": "#/definitions/IPickerMetadata"
+              },
+              {
+                "$ref": "#/definitions/IInputGroupMetadata"
+              }
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "required": ["fields"],
+      "type": "object"
+    },
+    "IDateInputMetadata": {
+      "description": "NumberInput field on form",
+      "properties": {
+        "defaultValue": {
+          "description": "Default value on field"
+        },
+        "hint": {
+          "default": "",
+          "description": "Hint text showed on form",
+          "type": "string"
+        },
+        "icon": {
+          "$ref": "#/definitions/IFieldIcon",
+          "description": "Icon for the field"
+        },
+        "keyboardType": {
+          "$ref": "#/definitions/KeyboardType",
+          "description": "Type of upcoming keyboard"
+        },
+        "label": {
+          "default": "",
+          "description": "Label of input field",
+          "type": "string"
+        },
+        "labelType": {
+          "default": "floating",
+          "description": "Type of label",
+          "enum": ["floating", "inline", "stacked"],
+          "type": "string"
+        },
+        "maximumValue": {
+          "description": "Enables basic storage and retrieval of dates and times.",
+          "format": "date-time",
+          "type": "string"
+        },
+        "minimumValue": {
+          "description": "Enables basic storage and retrieval of dates and times.",
+          "format": "date-time",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of input field",
+          "type": "string"
+        },
+        "normalizer": {
+          "$ref": "#/definitions/Normalizer",
+          "description": "Normalizers for field"
+        },
+        "order": {
+          "default": 0,
+          "description": "Order on form",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "placeholder": {
+          "default": "",
+          "description": "Placeholder text showed in input when it's empty",
+          "type": "string"
+        },
+        "required": {
+          "default": false,
+          "description": "Is the field required?",
+          "type": "boolean"
+        },
+        "returnKey": {
+          "$ref": "#/definitions/ReturnKeyType",
+          "description": "Type of return key on keyboard"
+        },
+        "textboxType": {
+          "default": "underlined",
+          "description": "Type of textbox border",
+          "enum": ["regular", "rounded", "underlined"],
+          "type": "string"
+        },
+        "type": {
+          "description": "Type of DateInput is restricted to 'date'",
+          "enum": ["date"],
+          "type": "string"
+        },
+        "validators": {
+          "description": "Validators for field",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/ServerDefinedExpression"
+              },
+              {
+                "enum": ["alphanumeric", "numeric", "required"],
+                "type": "string"
+              }
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "required": ["name", "type"],
+      "type": "object"
+    },
+    "IFieldIcon": {
+      "description": "Structure for provide Icons to the application's fields",
+      "properties": {
+        "library": {
+          "$ref": "#/definitions/IconLibraries",
+          "description": "Choosen Icon library"
+        },
+        "name": {
+          "description": "Choosen icon's name from the library",
+          "type": "string"
+        },
+        "place": {
+          "description": "Icon's place in box",
+          "enum": ["left", "right"],
+          "type": "string"
+        },
+        "style": {
+          "$ref": "#/definitions/TextStyle",
+          "description": "CSS properties"
+        }
+      },
+      "required": ["library", "name"],
+      "type": "object"
+    },
+    "IInputGroupMetadata": {
+      "description": "Declares an input group with a title on the top",
+      "properties": {
+        "fields": {
+          "description": "Fields which will be included in this group",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/ITextInputMetadata"
+              },
+              {
+                "$ref": "#/definitions/INumberInputMetadata"
+              },
+              {
+                "$ref": "#/definitions/IDateInputMetadata"
+              },
+              {
+                "$ref": "#/definitions/IPickerMetadata"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        "label": {
+          "description": "Label of the group",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of input group",
+          "type": "string"
+        },
+        "order": {
+          "description": "Order on form",
+          "type": "number"
+        },
+        "type": {
+          "description": "Type constant",
+          "enum": ["inputGroup"],
+          "type": "string"
+        }
+      },
+      "required": ["fields", "name", "type"],
+      "type": "object"
+    },
+    "INumberInputMetadata": {
+      "description": "NumberInput field on form",
+      "properties": {
+        "defaultValue": {
+          "description": "DefaultValue's type is restricted to be a number",
+          "type": "number"
+        },
+        "hint": {
+          "default": "",
+          "description": "Hint text showed on form",
+          "type": "string"
+        },
+        "icon": {
+          "$ref": "#/definitions/IFieldIcon",
+          "description": "Icon for the field"
+        },
+        "keyboardType": {
+          "default": "numeric",
+          "description": "restrict keyboardType for numeric input",
+          "enum": ["numeric", "phone-pad"],
+          "type": "string"
+        },
+        "label": {
+          "default": "",
+          "description": "Label of input field",
+          "type": "string"
+        },
+        "labelType": {
+          "default": "floating",
+          "description": "Type of label",
+          "enum": ["floating", "inline", "stacked"],
+          "type": "string"
+        },
+        "maximumValue": {
+          "description": "Maximum value to set",
+          "type": "number"
+        },
+        "minimumValue": {
+          "description": "Mimimum value to set",
+          "type": "number"
+        },
+        "name": {
+          "description": "Name of input field",
+          "type": "string"
+        },
+        "normalizer": {
+          "$ref": "#/definitions/Normalizer",
+          "description": "Normalizers for field"
+        },
+        "order": {
+          "default": 0,
+          "description": "Order on form",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "placeholder": {
+          "default": "",
+          "description": "Placeholder text showed in input when it's empty",
+          "type": "string"
+        },
+        "required": {
+          "default": false,
+          "description": "Is the field required?",
+          "type": "boolean"
+        },
+        "returnKey": {
+          "$ref": "#/definitions/ReturnKeyType",
+          "description": "Type of return key on keyboard"
+        },
+        "textboxType": {
+          "default": "underlined",
+          "description": "Type of textbox border",
+          "enum": ["regular", "rounded", "underlined"],
+          "type": "string"
+        },
+        "type": {
+          "description": "Type of Input field is restricted to 'number'",
+          "enum": ["number"],
+          "type": "string"
+        },
+        "validators": {
+          "description": "Validators for field",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/ServerDefinedExpression"
+              },
+              {
+                "enum": ["alphanumeric", "numeric", "required"],
+                "type": "string"
+              }
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "required": ["name", "type"],
+      "type": "object"
+    },
+    "IPickerMetadata": {
+      "description": "Native Picker field on form (dropdown)",
+      "properties": {
+        "defaultValue": {
+          "description": "Default value on field"
+        },
+        "hint": {
+          "default": "",
+          "description": "Hint text showed on form",
+          "type": "string"
+        },
+        "label": {
+          "default": "",
+          "description": "Label of input field",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of input field",
+          "type": "string"
+        },
+        "options": {
+          "description": "Options which will be selectable",
+          "items": {
+            "$ref": "#/definitions/IPickerOptions"
+          },
+          "type": "array"
+        },
+        "order": {
+          "default": 0,
+          "description": "Order on form",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "required": {
+          "default": false,
+          "description": "Is the field required?",
+          "type": "boolean"
+        },
+        "type": {
+          "description": "'type' of PickerInput is restricted to 'picker'",
+          "enum": ["picker", "picker-list"],
+          "type": "string"
+        },
+        "validators": {
+          "description": "Validators for field",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/ServerDefinedExpression"
+              },
+              {
+                "enum": ["alphanumeric", "numeric", "required"],
+                "type": "string"
+              }
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "required": ["name", "options", "type"],
+      "type": "object"
+    },
+    "IPickerOptions": {
+      "properties": {
+        "disabled": {
+          "default": false,
+          "description": "Disable option",
+          "type": "boolean"
+        },
+        "label": {
+          "description": "Label of option",
+          "type": "string"
+        },
+        "value": {
+          "description": "Value of option"
+        }
+      },
+      "required": ["label", "value"],
+      "type": "object"
+    },
+    "ITextInputMetadata": {
+      "description": "Input metadata for TextField inputs",
+      "properties": {
+        "autoCapitalize": {
+          "default": "none",
+          "description": "AutoCapitalize keyboard input",
+          "enum": ["characters", "none", "sentences", "words"],
+          "type": "string"
+        },
+        "defaultValue": {
+          "description": "Default value (if exists)",
+          "type": "string"
+        },
+        "hint": {
+          "default": "",
+          "description": "Hint text showed on form",
+          "type": "string"
+        },
+        "icon": {
+          "$ref": "#/definitions/IFieldIcon",
+          "description": "Icon for the field"
+        },
+        "keyboardType": {
+          "$ref": "#/definitions/KeyboardType",
+          "description": "Type of upcoming keyboard"
+        },
+        "label": {
+          "default": "",
+          "description": "Label of input field",
+          "type": "string"
+        },
+        "labelType": {
+          "default": "floating",
+          "description": "Type of label",
+          "enum": ["floating", "inline", "stacked"],
+          "type": "string"
+        },
+        "maxLength": {
+          "default": null,
+          "description": "Maximum length of input",
+          "minimum": 1,
+          "type": "integer"
+        },
+        "minLength": {
+          "default": 0,
+          "description": "Minimum length of input",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "multiline": {
+          "default": false,
+          "description": "true if multiline text input",
+          "type": "boolean"
+        },
+        "name": {
+          "description": "Name of input field",
+          "type": "string"
+        },
+        "normalizer": {
+          "$ref": "#/definitions/Normalizer",
+          "description": "Normalizers for field"
+        },
+        "order": {
+          "default": 0,
+          "description": "Order on form",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "placeholder": {
+          "default": "",
+          "description": "Placeholder text showed in input when it's empty",
+          "type": "string"
+        },
+        "required": {
+          "default": false,
+          "description": "Is the field required?",
+          "type": "boolean"
+        },
+        "returnKey": {
+          "$ref": "#/definitions/ReturnKeyType",
+          "description": "Type of return key on keyboard"
+        },
+        "textboxType": {
+          "default": "underlined",
+          "description": "Type of textbox border",
+          "enum": ["regular", "rounded", "underlined"],
+          "type": "string"
+        },
+        "type": {
+          "description": "Type constant",
+          "enum": ["password", "text"],
+          "type": "string"
+        },
+        "validators": {
+          "description": "Validators for field",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/ServerDefinedExpression"
+              },
+              {
+                "enum": ["alphanumeric", "numeric", "required"],
+                "type": "string"
+              }
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "required": ["name", "type"],
+      "type": "object"
+    },
+    "IconLibraries": {
+      "enum": [
+        "Entypo",
+        "EvilIcons",
+        "Feather",
+        "FontAwesome",
+        "Foundation",
+        "Ionicons",
+        "MaterialCommunityIcons",
+        "MaterialIcon",
+        "Octicons",
+        "SimpleLineIcons",
+        "Zocial"
+      ],
+      "type": "string"
+    },
+    "KeyboardType": {
+      "enum": ["default", "email-address", "numeric", "phone-pad"],
+      "type": "string"
+    },
+    "Normalizer": {
+      "description": "Normalizer for input fields (like text/number)",
+      "properties": {
+        "name": {
+          "description": "Normalizer implementation",
+          "type": "string"
+        },
+        "parameters": {
+          "description": "Parameters (if have any)"
+        }
+      },
+      "required": ["name"],
+      "type": "object"
+    },
+    "PerpectiveTransform": {
+      "properties": {
+        "perspective": {
+          "type": "number"
+        }
+      },
+      "required": ["perspective"],
+      "type": "object"
+    },
+    "ReturnKeyType": {
+      "enum": ["done", "go", "next", "search", "send"],
+      "type": "string"
+    },
+    "RotateTransform": {
+      "properties": {
+        "rotate": {
+          "type": "string"
+        }
+      },
+      "required": ["rotate"],
+      "type": "object"
+    },
+    "RotateXTransform": {
+      "properties": {
+        "rotateX": {
+          "type": "string"
+        }
+      },
+      "required": ["rotateX"],
+      "type": "object"
+    },
+    "RotateYTransform": {
+      "properties": {
+        "rotateY": {
+          "type": "string"
+        }
+      },
+      "required": ["rotateY"],
+      "type": "object"
+    },
+    "RotateZTransform": {
+      "properties": {
+        "rotateZ": {
+          "type": "string"
+        }
+      },
+      "required": ["rotateZ"],
+      "type": "object"
+    },
+    "ScaleTransform": {
+      "properties": {
+        "scale": {
+          "type": "number"
+        }
+      },
+      "required": ["scale"],
+      "type": "object"
+    },
+    "ScaleXTransform": {
+      "properties": {
+        "scaleX": {
+          "type": "number"
+        }
+      },
+      "required": ["scaleX"],
+      "type": "object"
+    },
+    "ScaleYTransform": {
+      "properties": {
+        "scaleY": {
+          "type": "number"
+        }
+      },
+      "required": ["scaleY"],
+      "type": "object"
+    },
+    "ServerDefinedExpression": {
+      "properties": {
+        "errorMessage": {
+          "type": "string"
+        },
+        "regExp": {
+          "type": "string"
+        }
+      },
+      "required": ["errorMessage", "regExp"],
+      "type": "object"
+    },
+    "SkewXTransform": {
+      "properties": {
+        "skewX": {
+          "type": "string"
+        }
+      },
+      "required": ["skewX"],
+      "type": "object"
+    },
+    "SkewYTransform": {
+      "properties": {
+        "skewY": {
+          "type": "string"
+        }
+      },
+      "required": ["skewY"],
+      "type": "object"
+    },
+    "TextStyle": {
+      "properties": {
+        "alignContent": {
+          "enum": ["center", "flex-end", "flex-start", "space-around", "space-between", "stretch"],
+          "type": "string"
+        },
+        "alignItems": {
+          "$ref": "#/definitions/FlexAlignType"
+        },
+        "alignSelf": {
+          "enum": ["auto", "baseline", "center", "flex-end", "flex-start", "stretch"],
+          "type": "string"
+        },
+        "aspectRatio": {
+          "type": "number"
+        },
+        "backfaceVisibility": {
+          "enum": ["hidden", "visible"],
+          "type": "string"
+        },
+        "backgroundColor": {
+          "type": "string"
+        },
+        "borderBottomColor": {
+          "type": "string"
+        },
+        "borderBottomLeftRadius": {
+          "type": "number"
+        },
+        "borderBottomRightRadius": {
+          "type": "number"
+        },
+        "borderBottomWidth": {
+          "type": "number"
+        },
+        "borderColor": {
+          "type": "string"
+        },
+        "borderLeftColor": {
+          "type": "string"
+        },
+        "borderLeftWidth": {
+          "type": "number"
+        },
+        "borderRadius": {
+          "type": "number"
+        },
+        "borderRightColor": {
+          "type": "string"
+        },
+        "borderRightWidth": {
+          "type": "number"
+        },
+        "borderStyle": {
+          "enum": ["dashed", "dotted", "solid"],
+          "type": "string"
+        },
+        "borderTopColor": {
+          "type": "string"
+        },
+        "borderTopLeftRadius": {
+          "type": "number"
+        },
+        "borderTopRightRadius": {
+          "type": "number"
+        },
+        "borderTopWidth": {
+          "type": "number"
+        },
+        "borderWidth": {
+          "type": "number"
+        },
+        "bottom": {
+          "type": ["string", "number"]
+        },
+        "color": {
+          "type": "string"
+        },
+        "direction": {
+          "enum": ["inherit", "ltr", "rtl"],
+          "type": "string"
+        },
+        "display": {
+          "enum": ["flex", "none"],
+          "type": "string"
+        },
+        "elevation": {
+          "type": "number"
+        },
+        "flex": {
+          "type": "number"
+        },
+        "flexBasis": {
+          "type": ["string", "number"]
+        },
+        "flexDirection": {
+          "enum": ["column", "column-reverse", "row", "row-reverse"],
+          "type": "string"
+        },
+        "flexGrow": {
+          "type": "number"
+        },
+        "flexShrink": {
+          "type": "number"
+        },
+        "flexWrap": {
+          "enum": ["nowrap", "wrap"],
+          "type": "string"
+        },
+        "fontFamily": {
+          "type": "string"
+        },
+        "fontSize": {
+          "type": "number"
+        },
+        "fontStyle": {
+          "enum": ["italic", "normal"],
+          "type": "string"
+        },
+        "fontWeight": {
+          "description":
+            "Specifies font weight. The values 'normal' and 'bold' are supported\nfor most fonts. Not all fonts have a variant for each of the numeric\nvalues, in that case the closest one is chosen.",
+          "enum": ["100", "200", "300", "400", "500", "600", "700", "800", "900", "bold", "normal"],
+          "type": "string"
+        },
+        "height": {
+          "type": ["string", "number"]
+        },
+        "includeFontPadding": {
+          "type": "boolean"
+        },
+        "justifyContent": {
+          "enum": [
+            "center",
+            "flex-end",
+            "flex-start",
+            "space-around",
+            "space-between",
+            "space-evenly"
+          ],
+          "type": "string"
+        },
+        "left": {
+          "type": ["string", "number"]
+        },
+        "letterSpacing": {
+          "type": "number"
+        },
+        "lineHeight": {
+          "type": "number"
+        },
+        "margin": {
+          "type": ["string", "number"]
+        },
+        "marginBottom": {
+          "type": ["string", "number"]
+        },
+        "marginHorizontal": {
+          "type": ["string", "number"]
+        },
+        "marginLeft": {
+          "type": ["string", "number"]
+        },
+        "marginRight": {
+          "type": ["string", "number"]
+        },
+        "marginTop": {
+          "type": ["string", "number"]
+        },
+        "marginVertical": {
+          "type": ["string", "number"]
+        },
+        "maxHeight": {
+          "type": ["string", "number"]
+        },
+        "maxWidth": {
+          "type": ["string", "number"]
+        },
+        "minHeight": {
+          "type": ["string", "number"]
+        },
+        "minWidth": {
+          "type": ["string", "number"]
+        },
+        "opacity": {
+          "type": "number"
+        },
+        "overflow": {
+          "enum": ["hidden", "visible"],
+          "type": "string"
+        },
+        "padding": {
+          "type": ["string", "number"]
+        },
+        "paddingBottom": {
+          "type": ["string", "number"]
+        },
+        "paddingHorizontal": {
+          "type": ["string", "number"]
+        },
+        "paddingLeft": {
+          "type": ["string", "number"]
+        },
+        "paddingRight": {
+          "type": ["string", "number"]
+        },
+        "paddingTop": {
+          "type": ["string", "number"]
+        },
+        "paddingVertical": {
+          "type": ["string", "number"]
+        },
+        "position": {
+          "enum": ["absolute", "relative"],
+          "type": "string"
+        },
+        "right": {
+          "type": ["string", "number"]
+        },
+        "rotation": {
+          "type": "number"
+        },
+        "scaleX": {
+          "type": "number"
+        },
+        "scaleY": {
+          "type": "number"
+        },
+        "shadowColor": {
+          "type": "string"
+        },
+        "shadowOffset": {
+          "properties": {
+            "height": {
+              "type": "number"
+            },
+            "width": {
+              "type": "number"
+            }
+          },
+          "required": ["height", "width"],
+          "type": "object"
+        },
+        "shadowOpacity": {
+          "type": "number"
+        },
+        "shadowRadius": {
+          "type": "number"
+        },
+        "testID": {
+          "type": "string"
+        },
+        "textAlign": {
+          "enum": ["auto", "center", "justify", "left", "right"],
+          "type": "string"
+        },
+        "textAlignVertical": {
+          "enum": ["auto", "bottom", "center", "top"],
+          "type": "string"
+        },
+        "textDecorationColor": {
+          "type": "string"
+        },
+        "textDecorationLine": {
+          "enum": ["line-through", "none", "underline", "underline line-through"],
+          "type": "string"
+        },
+        "textDecorationStyle": {
+          "enum": ["dashed", "dotted", "double", "solid"],
+          "type": "string"
+        },
+        "textShadowColor": {
+          "type": "string"
+        },
+        "textShadowOffset": {
+          "properties": {
+            "height": {
+              "type": "number"
+            },
+            "width": {
+              "type": "number"
+            }
+          },
+          "required": ["height", "width"],
+          "type": "object"
+        },
+        "textShadowRadius": {
+          "type": "number"
+        },
+        "top": {
+          "type": ["string", "number"]
+        },
+        "transform": {
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/PerpectiveTransform"
+              },
+              {
+                "$ref": "#/definitions/RotateTransform"
+              },
+              {
+                "$ref": "#/definitions/RotateXTransform"
+              },
+              {
+                "$ref": "#/definitions/RotateYTransform"
+              },
+              {
+                "$ref": "#/definitions/RotateZTransform"
+              },
+              {
+                "$ref": "#/definitions/ScaleTransform"
+              },
+              {
+                "$ref": "#/definitions/ScaleXTransform"
+              },
+              {
+                "$ref": "#/definitions/ScaleYTransform"
+              },
+              {
+                "$ref": "#/definitions/TranslateXTransform"
+              },
+              {
+                "$ref": "#/definitions/TranslateYTransform"
+              },
+              {
+                "$ref": "#/definitions/SkewXTransform"
+              },
+              {
+                "$ref": "#/definitions/SkewYTransform"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        "transformMatrix": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "translateX": {
+          "type": "number"
+        },
+        "translateY": {
+          "type": "number"
+        },
+        "width": {
+          "type": ["string", "number"]
+        },
+        "writingDirection": {
+          "enum": ["auto", "ltr", "rtl"],
+          "type": "string"
+        },
+        "zIndex": {
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "TranslateXTransform": {
+      "properties": {
+        "translateX": {
+          "type": "number"
+        }
+      },
+      "required": ["translateX"],
+      "type": "object"
+    },
+    "TranslateYTransform": {
+      "properties": {
+        "translateY": {
+          "type": "number"
+        }
+      },
+      "required": ["translateY"],
+      "type": "object"
+    }
+  },
+  "patternProperties": {
+    "^[a-zA-Z0-9\\-\\_\\.]{0,}$": {
+      "type": "object",
+      "$ref": "#/definitions/Form"
+    }
+  },
+  "additionalProperties": false,
+  "type": "object"
+}

@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2015",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "outDir": "artifacts",
+    "rootDir": "src",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "allowJs": false,
+    "sourceMap": false,
+    "noImplicitReturns": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "types": [
+      "react",
+      "react-native",
+      "jest"
+    ]
+  },
+  "types": [
+    "react",
+    "react-native",
+    "jest"
+  ],
+  "exclude": [
+    "android",
+    "App.js",
+    "index.js",
+    "ios",
+    "build",
+    "node_modules"
+  ],
+  "compileOnSave": false
+}

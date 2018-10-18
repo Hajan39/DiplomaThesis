@@ -1,0 +1,111 @@
+{
+  "home":{
+    "TITLE": "Přehled"
+  },
+  "scoring":{
+    "sent":{
+      "header":"Skóring odeslán",
+      "body":"Vyčkejte na odpověď"
+    },
+    "send": "Odeslat Skóring"
+  },
+  "businessResults": {
+    "name": "Obchodní výsledky",
+    "plan": "Plán",
+    "reality": "Realita"
+  },
+  "customers":{
+    "TITLE": "Přehled zákazníků"
+  },
+  "contacts":{
+    "TITLE":"Kontakty",
+    "agency": "AGENTURA",
+    "all": "VŠECHNY"
+  },
+  "dailyMessages":{
+    "Header":"Děkujeme",
+    "Body": "Výsledky byly úspěšně odeslány",
+    "Send": "Odeslat denní výsledky"
+  },
+  "settings":{
+    "synchro":{
+      "header": "Synchronizace",
+      "headerNote":"Datové připojení",
+      "description": "Stahování informací se provádí automaticky i přes datové připojení, pokud zaškrtnete následující možnosti. Možnosti se liší v objemu stahovaných dat.",
+      "basicInfo": "Základní informace o zákaznících",
+      "detailInfo": "Detailní informace o zákaznících"
+    }
+  },
+  "table-of-charges":{
+    "TITLE":"Produktová tabulka"
+  },
+  "common": {
+    "BACK": "Zpět",
+    "CANCEL": "Zrušit",
+    "ENTER_SMS_CODE": "Prosím, vyplňte kód, který jsme Vám odeslali v SMS zprávě!",
+    "ENTER_VALID_CREDENTIALS": "Vyplňte platné údaje!",
+    "FIELD_REQUIRED": "Toto pole je povinné",
+    "LOGIN": "Příhlášení",
+    "LOGIN_NAME": "Uživatelské jméno",
+    "LOGIN_PASSWORD": "Heslo",
+    "LOG_IN": "Přihlásit se",
+    "LOG_OUT": "Odhlásit se",
+    "MAX_LENGTH": "Musí být dlouhé maximálně {{COUNT}} znak",
+    "MAX_LENGTH_plural": "Musí být dlouhé maximálně {{COUNT}} znaků",
+    "MIN_LENGTH": "Musí být dlouhé minimálně {{COUNT}} znak",
+    "MIN_LENGTH_plural": "Musí být dlouhé minimálně {{COUNT}} znaků",
+    "MUST_LOGIN": "Musíte být přihlášeni",
+    "OK": "Ok",
+    "ONLY_ALPHANUMERIC_CHARACTERS": "Povolena jsou pouze čísla a písmena",
+    "ONLY_NUMBERS": "Můžete použít pouze číslovky (0-9)",
+    "PHONE_NUMBER": "Telefonní číslo",
+    "REPRESENTATIVE_ID": "Osobní číslo",
+    "SMS_CODE": "SMS kód",
+    "WELCOME": "Vítejte!",
+    "NOT_AVAILABLE": "Omlouváme se, tato funcionalita není momentálně k dispozici."
+  },
+  "loginErrors": {
+    "ALREADY_SENT": {
+      "subtitle": "Musíte počkat přibližně 2 minuty před dalším pokusem.",
+      "title": "Příliž mnoho pokusů."
+    },
+    "INVALID": {
+      "subtitle": "Prosím, zkontrolujte zadané osobní a telefonní číslo.",
+      "title": "Neplatné přihlašovací údaje!"
+    },
+    "INVALID_CLIENTID": {
+      "subtitle": "Server nedokázal rozpoznat klientské ID",
+      "title": "Nesprávné ClientID"
+    },
+    "INVALID_CODE": {
+      "subtitle": "Verifikační kód, který jste napsali, není správný, prosím, zkontorlujte jej.",
+      "title": "Neplatný verifikační kód"
+    },
+    "NO_INTERNET": {
+      "subtitle": "Prosím, připojte se k WiFi síti, nebo povolte datové připojení.",
+      "title": "Bez přístupu k internetu"
+    },
+    "OLD_CODE": {
+      "subtitle": "Prosím, začněte od začátku.",
+      "title": "Starý verifikační kód"
+    },
+    "SERVER_ERROR": {
+      "subtitle": "Prosím, kontaktujte svého nadřízeného",
+      "title": "Ajaj, asi chyba v systému"
+    }
+  },
+  "sidebar": {
+    "navigation": {
+      "Home": "Přehled",
+      "Scoring": "Skóring",
+      "DailyMessages": "Denní výsledky",
+      "TableOfCharges": "Produktová nabídka" ,
+      "Customers":"Zakaznici",  
+      "Contacts":"Kontakty",
+      "Settings":"Nastavení"
+    }
+  },
+  "unlockErrors": {
+    "AuthenticationNotMatch": "Žádná shoda."
+  }
+}

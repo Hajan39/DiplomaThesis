@@ -1,0 +1,34 @@
+[
+    {
+        "key": 1,
+        "name": "Zelená",
+        "fields": [
+            {
+                "key": 11,
+                "iconName": "md-cash",
+                "name": "Zelená týdenní"
+            },
+            {
+                "key": 12,
+                "iconName": "md-cash",
+                "name": "Zelená měsíční"
+            }
+        ]
+    },
+    {
+        "key": 2,
+        "name": "Modrá",
+        "fields": [
+            {
+                "key": 21,
+                "iconName": "md-card",
+                "name": "Modrá týdenní"
+            },
+            {
+                "key": 22,
+                "iconName": "md-card",
+                "name": "Modrá měsíční"
+            }
+        ]
+    }
+]
